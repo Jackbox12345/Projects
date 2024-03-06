@@ -38,8 +38,7 @@ class Members extends Component
             ModelsMembers::create($validatedData);
             $this->reset(['name', 'age', 'gender']);
             session()->flash('success', 'Member created successfully.');
-            $this->dispatch('close-modal');
-    
+            $this->dispatch('close-modal');  
         } catch (\Exception $e) {
             // Log or display the error message
             dd($e->getMessage());
