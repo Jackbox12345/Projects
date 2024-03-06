@@ -12,7 +12,7 @@
                                     Todo </label>
                                 <input wire:model = "name"type="text" id="title" placeholder="Todo.."
                                     class="bg-gray-100  text-gray-900 text-sm rounded block w-full p-2.5">
-                                    @error('name')
+                                @error('name')
                                 <span class="text-red-500 text-xs mt-3 block ">{{$message}}</span>
                                 @enderror
                               

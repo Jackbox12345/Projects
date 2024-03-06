@@ -9,7 +9,7 @@
      style="display: none"
 class="fixed inset-0 flex justify-center items-center">
 <div x-on:click="show = false" class="fixed inset-0 flex justify-center items-center" style="height: 100vh;">
-    <div class="bg-white bg-opacity-50 rounded max-w-2xl flex flex-col justify-center items-center p-5">
+    <div class="bg-white bg-opacity-50 rounded max-w-2xl flex flex-col justify-center items-center p-5" @click.stop>
         @if(isset($title))
             <div class="py-3 flex items-center justify-center bg-white rounded-full w-40 mb-5">
                 {{$title}}
@@ -17,8 +17,11 @@ class="fixed inset-0 flex justify-center items-center">
         @endif
         <div>
             {{$body}}
+            
+
         </div>
     </div>
 </div>
+
 
 </div>

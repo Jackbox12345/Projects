@@ -62,32 +62,7 @@
 
         <x-modal name="test" title="Registration Modal">
             <x-slot:body>
-                <body class="bg-gray-100" >
-                    <div class="h-96 flex justify-center  ">
-                        <div class="bg-white p-8 rounded shadow-md w-96">
-                            <h2 class="text-2xl font-bold mb-4">Registration Form</h2>
-                            <form action="#" method="POST">
-                                <div class="mb-4">
-                                    <label for="name" class="block text-gray-700">Name:</label>
-                                    <input type="text" id="name" name="name" class="form-input mt-1 block w-full" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label for="age" class="block text-gray-700">Age:</label>
-                                    <input type="number" id="age" name="age" class="form-input mt-1 block w-full" required>
-                                </div>
-                                <div class="mb-4">
-                                    <label for="gender" class="block text-gray-700">Gender:</label>
-                                    <select id="gender" name="gender" class="form-select mt-1 block w-full" required>
-                                        <option value="" disabled selected>Select Gender</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Register</button>
-                            </form>
-                        </div>
-                    </div>
+                <livewire:members />
             </x-slot:body>
         </x-modal>
 

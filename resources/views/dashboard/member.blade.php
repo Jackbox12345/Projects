@@ -20,6 +20,7 @@
     <x-modal name="test2" title="Test2">
          
         <x-slot:body>
+            
         </x-slot:body>
 
     </x-modal>
