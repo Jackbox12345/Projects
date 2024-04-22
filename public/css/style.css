@@ -154,11 +154,17 @@ padding: 10px;
     flex-direction: column;
     justify-content: space-between;
     transition: all .5s ease-in-out;
+    cursor: pointer;
 }
 .payment--card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-10px)  ;
 }
-
+.payment--card .icon{
+    transition: transform 0.3s ease-in-out;
+}
+.payment--card:hover .icon{
+    transform:scale(1.2);
+}
 .card--header{
     display: flex;
     justify-content: space-between;

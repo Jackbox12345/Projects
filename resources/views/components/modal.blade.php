@@ -16,6 +16,7 @@ class="fixed inset-0 flex justify-center items-center">
             </div>
         @endif
         <div>
+            
             {{$body}}
             
 

@@ -29,6 +29,7 @@
                     @if(session('success'))
                     <span class="text-green-500 text-xs">{{session('success')}}</span>
                     @endif
+                    
                 </form>
 
             </div>

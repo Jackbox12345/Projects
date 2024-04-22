@@ -23,7 +23,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/StoreLogin',[userController::class,'logins'])->name('logins');
 
  Route::middleware(['auth'])->group(function () {
-//routes that require authentication 
+    //routes that require authentication 
     Route::get('/dashboard',[dashboardController::class,'index'])->name('dashboard');
     Route::get('register',[userController::class,'register'])->name('register');
     Route::post('storeRegister',[userController::class,'storeRegister'])->name('storeRegister');

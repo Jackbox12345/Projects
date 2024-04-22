@@ -33,6 +33,7 @@ class FinanceTable extends Component
         $this->total = $transactions->sum('amount');
         $toptrans = Transaction::where('user_id',$this->ids)->orderBy('created_at', 'desc')->take(4)->get();
         foreach ($toptrans as $index => $transaction) {
+            //add css attributes on each index
             switch ($index) {
                 case 0:
                     $transaction->color = 'light-red';
@@ -50,7 +51,7 @@ class FinanceTable extends Component
                     $transaction->color = 'light-blue';
                     $transaction->icon = 'bx bx-check dark-blue';
                     break;
-                // Add more cases as needed for different indexes
+              
             }
             
         }

@@ -11,6 +11,8 @@
             font-family: Arial, sans-serif;
             background-color: #000000;
             background-image: url('{{asset('pictures/a.jpg')}}');
+            background-repeat: no-repeat;
+            background-size: cover;
             margin: 0;
             padding: 0;
             display: flex;
@@ -26,10 +28,11 @@
             padding: 20px;
             width: 90%; /* Adjust width as needed */
             max-width: 400px; /* Set maximum width */
-            transition: box-shadow 0.3s ease;
+            transition: all 0.3s ease;
         }
         .login-container:hover{
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            transform: translateY(-5px)
         }
         .login-container h2 {
             text-align: center;

@@ -22,7 +22,7 @@
         <x-slot:body>
             
         </x-slot:body>
-
+        
     </x-modal>
 
 
